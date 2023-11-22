@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chia sẻ kinh nghiệm nấu ăn</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Chia sẻ kinh nghiệm và kỹ thuật nấu ăn</h1>
+  <form id="recipeForm" method="post" action="submit.php">
+    <label for="recipeTitle">Tiêu đề công thức:</label>
+    <input type="text" id="recipeTitle" name="recipeTitle" required>
+    
+    <label for="ingredients">Nguyên liệu:</label>
+    <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+    
+    <label for="instructions">Hướng dẫn:</label>
+    <textarea id="instructions" name="instructions" rows="6" required></textarea>
+    
+    <input type="submit" value="Gửi công thức">
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
